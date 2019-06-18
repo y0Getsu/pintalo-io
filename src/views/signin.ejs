@@ -1,0 +1,55 @@
+ <%- layout('layouts/signInUp.ejs') %>
+<!--
+ <div class="spinnerBg">
+ 	<img src="img/spinner.gif" class="spinner"></img>
+ </div>
+-->
+
+<div class="banner">
+	<video autoplay muted loop class="background-video" id="background-video">
+		<source src="img/home-video.mp4">
+	</video>
+	<div class="content">
+	  	<div class="loginbox">
+	  		<img src="img/logo.png" class="logo" />
+	  		<h1>PINTALO.IO</h1>
+	  		<form action="/" method="POST">
+		  		<p>Usuario</p>
+		  		<input type="text" name="username" placeholder="Introduce el usuario">
+		  		<p>Contraseña</p>
+		  		<input type="password" name="password" placeholder="Introduce tu contraseña">
+		  		<input type="submit" value="Entra">
+		  	</form>
+		  	<% if(errorMessage) { %>
+				<div class="message">
+					<%= errorMessage %>	
+				</div>
+			<% } %>
+	  		<a href="/forgot-password">¿No recuerdas tu contraseña?</a><br>
+	  		<a href="/signup">¿No tienes una cuenta?</a>
+	  		<div class="others-logins">
+	  			<p>inicia sesion con</p>
+	  			<div class="buttons">
+		  			<a href="/auth/google" class="google">Google+</a><!--
+		  			<a href="/auth/google" class="facebook">Facebook</a>-->
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	/*
+	$(document).ready(function(){
+
+		$('.background-video').on('loadeddata',function() {
+			$('.spinnerBg').remove();
+			$('.spinner').remove();
+			$('.banner video').css('opacity', '1');
+			$('.background-video').get(0).play();
+
+		});
+
+	});
+*/
+</script>

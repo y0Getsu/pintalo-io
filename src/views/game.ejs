@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<%- include('layouts/headerTag.ejs') %>
+	<style>.profiles, .homes, .logouts, .administration-panel, .manuals{ color: #fff; } </style>
+	<script type="text/javascript" src="/lib/spectrum.js"></script>
+	<link rel="stylesheet" type="text/css" href="/lib/spectrum.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+	<header>
+		<%- include('layouts/header.ejs') %>
+	</header>
+	<main>
+	 	<div class="content">
+	 		<div class="divsInfo">
+	 			<div class="panelgame">
+	 				<div class="time"></div>
+	 				<div class="drawer"></div>
+	 				<div class="pole"></div>
+	 			</div>
+	 		</div>
+	 		
+	 		<div class="divsGame">
+	 			<h1 class="gameEvents"></h1>
+	 			<div class="div1">
+	 				<div class="titulo">
+	 					<span>JUGADORES CONECTADOS</span>
+	 				</div>
+	 				<div id="users"></div>
+	 			</div>
+	 			
+	 			<div id="div2">
+	 				<div class="word"></div>
+	 				<div class="palette">
+	 					<input type="text" class="colors" />
+	 					<img src="img/drawer.png" class="pencil"></img>
+	 					<img src="img/erase.png" class="erased"></img>
+	 					<input type="range" id="strokeSize" value="10" min="5" max="30" step="0.01">
+	 					
+	 				</div>
+	 			</div>
+	 			
+	 			<div class="div3">
+		 			<div class="titulo">
+		 				<span>ADIVINA LA PALABRA</span>
+		 			</div>
+					<div id="chat"></div>
+		 			<form id="myform">
+		 				<input type="text" name="message" id="message" placeholder="Introduce mensaje" />
+		 				<input type="submit" name="enviar" id="enviar" value="Enviar">
+		 			</form>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </main>
+	 <footer>
+	 	<%- include('layouts/footer.ejs') %>
+	 </footer>
+	 <script src="/socket.io/socket.io.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+	 <script type="text/javascript" src="/js/game.js"></script>
+	  <!--<script type="text/javascript" src="/js/canvas.js"></script>-->
+
+
+	 <script>
+
+	 	$('.content').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0}, 1000);
+
+		$(".colors").spectrum({
+		 	color: "#f00"
+		});
+
+	 </script>
+</body>
+</html>

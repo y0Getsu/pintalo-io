@@ -1,0 +1,255 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+
+}
+
+.banner{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.banner .content{
+	position: relative;
+	z-index: 1;
+	max-width: 1000px;
+	margin: 0 auto;
+	
+}
+
+.loginbox{
+	width: 320px;
+	height: 420px;
+	background: #111111;
+	color: #fff;
+	padding: 70px 30px;
+	border-radius: 10px;
+
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.loginbox h1{
+	margin: 0;
+	padding: 0 0 40px;
+	text-align: center;
+	font-size: 22px;
+
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="email"]
+{
+	border: none;
+	border-bottom:  1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #FF4136;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px; 
+
+}
+
+.loginbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background-color: #FFDC00;
+	color: #000;
+
+}
+
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.loginbox a:hover{
+	color: #FFDC00;
+}
+
+.message{
+	color: #FFDC00;
+	font-size: 12px;
+}
+
+.others-logins{
+	padding-top: 50px;
+	width: 400;
+	height: 400%;
+	border-radius: 50%;
+	top: -50px;
+	left: calc(50% - 50px);
+
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+
+}
+
+.loginbox .others-logins .google{
+	border: none;
+	outline: none;
+	background: #FF4136;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px; 
+	margin-left: 3%;
+	padding: 10px 60px 10px 60px;
+	text-align: center;
+
+}
+
+.loginbox .others-logins .google:hover{
+	background-color: red;
+	color: #fff;
+}
+
+.loginbox .others-logins .facebook{
+	border: none;
+	outline: none;
+	background: #3b5998;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px; 
+	margin-left: 3%;
+	padding: 12px 25px 12px 25px;
+	text-align: center;
+
+}
+
+.loginbox .others-logins .facebook:hover{
+	background-color: #0074D9;
+	color: #fff;
+}
+
+.others-logins p{
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 25px;
+} 
+
+.errorMessage, .successfullMessage{
+	display: flex;
+	position: absolute;
+	width: 310px;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 13px;	
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.errorMessage{
+	color: #8B0000;
+	border-radius: 10px;
+	border: 1px solid #8B0000;
+	background-color: #FF4136; 
+	
+}
+
+.successfullMessage{
+	color: green;
+	border: 1px solid green;
+	background-color: #01FF70; 
+	border-radius: 10px;
+}
+
+.spinnerBg {
+	background-color: white;
+	width: 100%;
+	height: 100vh;
+
+}
+
+.spinner {
+	position: absolute;
+	margin-left: calc(50% - 100px);
+	margin-top: calc(20% - 100px);
+	z-index: 5;
+}
+
+@media all and (max-width: 700px) {
+
+	.loginbox{
+		width: 80%;
+		height: 500px;
+
+	}
+
+	.banner .content{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+
+	.errorMessage, .successfullMessage{
+		display: flex;
+		position: absolute;
+		width: 75%;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 13px;	
+		margin-top: 15px;
+	}
+
+}
+

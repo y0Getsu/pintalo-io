@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<%- include('layouts/headerTag.ejs') %>
+ 	<link rel="stylesheet" type="text/css" href="css/administrationPanel.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<style>.profiles, .manuals, .logouts, .homes{ color: #fff; } .administration-panel{color: #D40D12;} .administration-panel span{margin: auto; width: 100%; border-bottom: 3px solid #D40D12;padding-bottom: 15px;}</style>
+  	
+</head>
+<body>
+ 	<header>
+ 		<%- include('layouts/header.ejs') %>
+ 	</header>
+ 
+	 <main>
+	 	<div class="content">
+			<table class="table table-dark">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">First</th>
+			      <th scope="col">Last</th>
+			      <th scope="col">Handle</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Mark</td>
+			      <td>Otto</td>
+			      <td>@mdo</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Jacob</td>
+			      <td>Thornton</td>
+			      <td>@fat</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Larry</td>
+			      <td>the Bird</td>
+			      <td>@twitter</td>
+			    </tr>
+			  </tbody>
+			</table>
+	 	</div>
+	</main>
+
+ 	<footer>
+ 		<%- include('layouts/footer.ejs') %>
+ 	</footer>
+
+  	<script type="text/javascript">
+  		$(document).ready(function (){
+			$('a').on('click', function(){
+		    	$('a.active').removeClass('active');
+		    	$(this).addClass('active');
+			});	
+  		});
+  	</script>
+</body>
+</html>

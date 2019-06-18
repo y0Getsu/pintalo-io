@@ -1,0 +1,21 @@
+<nav>		
+	<a href="/lobby"><h1>PINTALO<span>.IO</span></h1></a>
+	<img src="/img/logo.png">
+	<!--
+	<div class="jugadores_online">
+		<span class="jugadores">Jug Online  <i class="fas fa-user">  </i></span><span class="numero_jugadores">  2745</span>
+	</div>
+	-->
+
+	<ul>
+		<!--
+		<% if(isAdmin) { %>
+			<li><a href="/administration-panel" class="administration-panel"><i class="fa fa-tools" aria-hidden="true"></i><br><span>ADMIN PANEL</span></a></li>	
+		<% } %>
+		-->
+		<li><a href="/lobby" class="homes"><i class="fa fa-home" aria-hidden="true"></i><br><span>HOME</span></a></li>
+		<li><a href="/profile/<%= user.username %>" class="profiles"><i class="fa fa-user" aria-hidden="true"></i><br><span>PERFIL</span></a></li>
+		<li><a href="/manual" class="manuals"><i class="fas fa-book"></i><br><span>MANUAL</span></a></li>
+		<li><a href="/logout" class="logouts"><i class="fas fa-sign-out-alt"></i><br><span>LOGOUT</span></a></li>
+	</ul>
+</nav>		

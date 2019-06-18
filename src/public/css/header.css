@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', cursive;
+
+}
+
+header {
+    height: 75px;
+    background-color: #5C0002;
+}
+
+main {
+    flex: auto;
+    background-color: #450003;
+}
+
+nav img{
+    margin: 8px;
+    width: 55px;
+    height: 55px;
+}
+
+
+nav a h1{
+    padding: 10px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    font-family: 'Montserrat', cursive;
+    color: #fff;
+}
+
+.logo_section img{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 6px 10px;
+}
+
+nav a h1 span{
+    color: #FF1D23;
+}
+
+ul li a i{
+    margin-left: 0px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    width: auto;
+    float: right;
+    margin-top: 15px;
+}
+
+nav ul li{
+    text-align: center;
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.homes, .profiles, .manuals, .logouts {
+    
+    color: #fffs;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: 'OPen Sans', sans-serif;
+}
+
+a:hover{
+    color: #FF1D23;
+}
+
+ul li a span:hover{
+    margin: auto;
+    width: 100%;
+    border-bottom: 3px solid #FF1D23;
+    padding-bottom: 15px;
+    transition: border-bottom .8s, width .8s;
+
+}
+
+ul li a{
+
+    text-align: center;
+    font-size: 12px;
+}
+
+h1{
+    font-family: 'Montserrat';
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}

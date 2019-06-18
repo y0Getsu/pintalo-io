@@ -1,0 +1,8 @@
+[user]
+	name = Luis Villena Saiz
+	email = luisjakevs@gmail.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto

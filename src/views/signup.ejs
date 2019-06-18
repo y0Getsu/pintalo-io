@@ -1,0 +1,33 @@
+ <%- layout('layouts/signInUp.ejs') %>
+
+<div class="banner">
+	<video autoplay muted loop>
+		<source src="img/home-video.mp4">
+	</video>
+	<div class="content">
+	  	<div class="loginbox">
+	  		<img src="img/logo.png" class="logo" />
+	  		<h1>PINTALO.IO</h1>
+	  		<form action="/signup" method="POST" onsubmit="return validateForm()" id="formulario">
+		  		<p>Usuario</p>
+		  		<input type="text" id="username"name="username" placeholder="Introduce el usuario" required>
+		  		<div class="message" id="usernameValidate"></div>
+		  		<p>Email</p>
+		  		<input type="email" name="email" placeholder="Introduce tu email" required>
+		  		<p>Contraseña</p>
+		  		<input type="password" name="password" id="password" placeholder="Introduce tu contraseña" required>
+		  		<div class="message" id="passwordValidate"></div>
+		  		<input type="password" id="password2" name="password2" placeholder="Repite tu contraseña" required>
+		  		<div class="message" id="comparePasswordValidate"></div>
+		  		<input type="submit" value="Registrate">
+		  	</form>
+		  	<% if (errorMessage) { %>
+				<div class="message" id="message">
+					<%= errorMessage %>	
+				</div>
+			<% } %>
+	  	</div>
+	</div>
+</div>
+<script type="text/javascript" src="/js/validationsSignUp.js"></script>
+
