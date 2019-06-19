@@ -685,18 +685,6 @@ module.exports = function(io){
 	});
 }
 
-/*
 
-PASOS COMPLETADOS:
-	1.-Rooms Dinámicas creadas asignando drawer or guesser
-	2.- Borrado de  jugadores desconectados de la sala en la que se encuentran
-	    2.1- Si es drawer se asigna un nuevo drawer
-	    2.2 Salas que no tienen jugadores son borradas
-	3.- Chat para cada room.
-	4.- Lista de usuarios conectados en la sala.
-
-	    (RECORDATORIO): BORRAR SALAS QUE NO TIENEN JUGADORES
-
-*/
 
 
