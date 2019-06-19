@@ -99,10 +99,6 @@ router.get('/game', isLoggedIn, gameController.game_get);
 
 router.get('/administration-panel', isLoggedIn, pageController.administration_page_get);
 
-router.get('/ejemplo', (req, res) => {
-	//lógica del programa
-});
-
 //export router
 
 module.exports = router;
