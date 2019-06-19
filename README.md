@@ -5,3 +5,4 @@ PINTALO.IO es un juego masivo multijugador en línea donde los jugadores (adivin
 las palabras que dibuja el pintador.
 
 Este proyecto ha sido realizado para la exposición y presentación en el grado de Desarrolo de Aplicaciones Web - DAW
+Desplegado en http://pintalo-io.herokuapp.com/ (Necesarios 3 jugadores para empezar la partida)
